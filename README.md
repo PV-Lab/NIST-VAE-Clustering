@@ -11,11 +11,13 @@ There are several packages and/or libraries that need to be installed to run the
 4.	TensorFlow (https://www.tensorflow.org/install)
 OR clone the following repository: pip install -r requirements.txt 
 
+
 **Datasets**
 
 There are two datasets we need in the parent folder:
 1.	A combiview text file with theta and XRD diffraction values for all samples.
 2.	A text file with combiview mapping of composition and temperature with XRD in the first file.
+
 
 **Workflow**
 
@@ -31,6 +33,7 @@ There are two python executables that need to be run. First, vaecluster_loop.py 
 *class_averaging* (runtime – short, few minutes):
 1.	We read the data from vaecluster_loop and count occurrences of each cluster labels for each composition-temperature combination. A probability profile is built for each label using these numbers out of total runs of 150 (using numpy and list operations).
 2.	For each method, we repeat the step one and save the files in a text format. These files are provided to the leading scientist of the full study. 
+
 
 **Authors**
 
